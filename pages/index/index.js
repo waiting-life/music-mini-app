@@ -1,5 +1,4 @@
 import {request} from '../../request/index'
-import regeneratorRuntime from '../../lib/runtime/runtime';
 Page({
   data: {
     banners: [],
@@ -56,8 +55,8 @@ Page({
     // })
   },
   toRecommendSong() {
-      wx.navigateTo({
-        url: '/pages/recommendSong/recommendSong'
-      });
+    wx.navigateTo({
+      url: '/songPackage/pages/recommendSong/recommendSong'
+    });
   }
 });

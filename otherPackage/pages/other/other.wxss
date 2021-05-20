@@ -1,0 +1,15 @@
+@import '/template/myTemplate/myTemplate.wxss';
+
+/* 类名一样会覆盖 */
+/* .title {
+  color: skyblue;
+  font-size: 60rpx;
+} */
+
+.other_title {
+  font-size: 60rpx;
+  color: skyblue;
+}
+.other_title_openid {
+  margin-top: 200rpx;
+}

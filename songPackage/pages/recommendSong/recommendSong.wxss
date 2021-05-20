@@ -1,3 +1,4 @@
+@import '/static/iconfont/iconfont.wxss';
 .recommend_container .recommend_header {
   position: relative;
   width: 100%;

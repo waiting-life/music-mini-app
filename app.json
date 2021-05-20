@@ -2,8 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/search/search",
-    "pages/recommendSong/recommendSong",
-    "pages/songDetail/songDetail",
     "pages/login/login",
     "pages/personal/personal",
     "pages/video/video"
@@ -46,5 +44,27 @@
   "sitemapLocation": "sitemap.json",
   "requiredBackgroundModes": [
     "audio"
-  ]
+  ],
+  "subpackages": [
+    {
+      "root": "songPackage",
+      "pages": [
+        "pages/recommendSong/recommendSong",
+        "pages/songDetail/songDetail"
+      ],
+      "independent": true
+    },
+    {
+      "root": "otherPackage",
+      "name":"other",
+      "pages": [
+        "pages/other/other"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "packages": ["songPackage", "other"]
+    }
+  }
 }

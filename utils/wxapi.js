@@ -27,3 +27,16 @@ export const showModal = ({title='提示', content=''}) => {
     });
   })
 }
+
+export const login = () => {
+  return new Promise((resolve, reject) => {
+    wx.login({
+      success: (result) => {
+        resolve(result)
+      },
+      fail: (err) => {
+        reject(err)
+      },
+    });
+  })
+}

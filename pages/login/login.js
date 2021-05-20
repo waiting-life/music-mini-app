@@ -14,7 +14,6 @@
  */
 
 import {request} from '../../request/index'
-import regeneratorRuntime from '../../lib/runtime/runtime';
 import { showToast} from '../../utils/wxapi'
 Page({
 

@@ -1,7 +1,7 @@
 import PubSub from 'pubsub-js'
 
-import {request} from '../../request/index'
-import {showToast} from '../../utils/wxapi'
+import {request} from '../../../request/index'
+import {showToast} from '../../../utils/wxapi'
 
 Page({
 
@@ -75,7 +75,7 @@ Page({
     wx.navigateTo({
       // 对长度有限制，所以不能用song作为参数
       // url: `/pages/songDetail/songDetail?song=${JSON.stringify(song)}`,
-      url: `/pages/songDetail/songDetail?ids=${ids}`
+      url: `/songPackage/pages/songDetail/songDetail?ids=${ids}`
     });
       
   }

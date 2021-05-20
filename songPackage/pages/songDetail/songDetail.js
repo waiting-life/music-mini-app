@@ -1,7 +1,7 @@
 import PubSub from 'pubsub-js'
 import moment, { duration } from 'moment'
 
-import {request} from '../../request/index'
+import {request} from '../../../request/index'
 const appInst =  getApp();
 
 Page({
