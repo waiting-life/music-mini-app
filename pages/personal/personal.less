@@ -1,0 +1,166 @@
+.personal_container {
+  .user_container {
+    position: relative;
+    .user_bg {
+      width: 100%;
+      opacity: 0.7;
+      filter: blur(1px);
+    }
+
+    .user_info_container {
+      position: absolute;
+      padding: 0 30rpx;
+      top: 120rpx;
+      display: flex;
+      align-items: center;
+      .user_avatar {
+        width: 140rpx;
+        height: 140rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 20rpx;
+        image {
+          width: 130rpx;
+          height: 130rpx;
+          border-radius: 50%;
+        }
+      }
+
+      .user_nickname {
+        font-size: 36rpx;
+        color: #303133;
+      }
+    }
+
+    .vip_card_container {
+      position: absolute;
+      top: 290rpx;
+      left: 30rpx;
+      right: 30rpx;
+      background: rgba(0, 0, 0, .7);
+      color: #f7d680;
+      border-radius: 16rpx 16rpx 0 0;
+      padding: 20rpx;
+      overflow: hidden;
+      .vip_bg {
+        position:absolute;
+        top: 20rpx;
+        right: 0;
+        width: 380rpx;
+        height: 260rpx;
+      }
+
+      .vip_header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 22rpx;
+        .vip_card_left {
+          margin-bottom: 40rpx;
+          .iconfont {
+            margin-right: 20rpx;
+            color: #f6e5a3;
+          }
+        }
+        .open_btn {
+          color: #36343c;
+          background-color: #f9e6af;
+          padding: 0 20rpx;
+          height: 40rpx;
+          line-height: 40rpx;
+          border-radius: 20rpx;
+          z-index: 10;
+        }
+      }
+
+      .vip_detail_text {
+        .detail_en {
+          margin-bottom: 20rpx;
+        }
+      }
+    }
+  }
+
+  .main_container {
+    margin-top: -80rpx;
+    padding: 0 30rpx;
+    position:relative;
+    background: #f5f5f5;
+    padding-bottom: 20rpx;
+    .decorate_img {
+      position:absolute;
+      height:36rpx;
+      left: 0;
+      top: -34rpx;
+      width: 100%;
+    }
+
+    .nav_container {
+      display: flex;
+      background-color: #fff;
+      margin-top: 10rpx;
+      padding: 30rpx 20rpx;
+      border-radius: 10rpx; 
+      height: 160rpx;
+      .nav_item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .iconfont {
+          font-size: 50rpx;
+          color: var(--themeColor);
+        }
+
+        .tag_text {
+          font-size: 24rpx;
+          color: #333;
+        }
+      }
+    }
+
+    .person_cate_container {
+      margin-top: 20rpx;
+      .recent_play_container {
+        background-color: #fff;
+        .recent_play_title {
+          height: 90rpx;
+          padding: 0 20rpx;
+          line-height: 90rpx;
+          font-size: 28rpx;
+          color: #333;
+        }
+        .recent_records {
+          display: flex;
+          height: 200rpx;
+          .recent_item {
+            margin-right: 20rpx;
+            .recent_item_img {
+              width: 200rpx;
+              height: 200rpx; 
+              border-radius: 20rpx;
+            }
+          }
+        }
+      }
+      
+
+      .person_card_list {
+        .person_card_item {
+          background-color: #fff;
+          height: 90rpx;
+          padding: 0 20rpx;
+          border-top: 1rpx solid #eee;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 26rpx;
+          color: #333;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "SearchInput": "/components/SearchInput/SearchInput"
+  },
+  "navigationBarTitleText": "视频",
+  "enablePullDownRefresh": true
+}

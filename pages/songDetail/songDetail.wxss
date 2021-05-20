@@ -1,0 +1,118 @@
+.song_detail_container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.song_detail_container .circle {
+  position: relative;
+  z-index: 20;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.song_detail_container .needle {
+  position: relative;
+  left: 60rpx;
+  top: -40rpx;
+  z-index: 10;
+  width: 192rpx;
+  height: 274rpx;
+  transform-origin: 40rpx 0;
+  transform: rotate(-20deg);
+  transition: transform 1s;
+}
+.song_detail_container .needle_rotate {
+  transform: rotate(0deg);
+}
+.song_detail_container .disc_animation {
+  animation: disc 4s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes disc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.song_detail_container .disc_container {
+  position: relative;
+  top: -170rpx;
+  width: 600rpx;
+  height: 600rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.song_detail_container .disc_container .disc {
+  width: 100%;
+  height: 100%;
+}
+.song_detail_container .disc_container .musicImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+.song_detail_container .process_control {
+  position: absolute;
+  bottom: 200rpx;
+  height: 80rpx;
+  width: 640rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.song_detail_container .process_control .bar_control {
+  position: relative;
+  width: 450rpx;
+  height: 4rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.song_detail_container .process_control .bar_control .audio_curtime_bar {
+  position: absolute;
+  width: 100rpx;
+  height: 4rpx;
+  top: 0;
+  left: 0;
+  background-color: var(--themeColor);
+  z-index: 100;
+}
+.song_detail_container .process_control .bar_control .audio_curtime_bar .audio_circle {
+  position: absolute;
+  right: -12rpx;
+  top: -4rpx;
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.song_detail_container .music_control_container {
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #fff;
+}
+.song_detail_container .music_control_container text {
+  flex: 1;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 50rpx;
+  color: #fff;
+}
+.song_detail_container .music_control_container text:nth-child(3) {
+  font-size: 80rpx;
+}

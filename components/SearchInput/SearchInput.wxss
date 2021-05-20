@@ -1,0 +1,14 @@
+.search_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60rpx;
+  padding: 10rpx;
+}
+
+.search_input navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26rpx;
+}

@@ -1,0 +1,25 @@
+@import './static/iconfont/iconfont.wxss';
+/* 在小程序中不支持通配符*   */
+page,
+view,
+text,
+image,
+swiper,
+swiper-item,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 主题颜色用变量来实现 */
+page {
+  /* 定义主题颜色 */
+  --themeColor: #d43c33;
+  --bgColor: #f01313;
+  /* 定义统一字体大小 假设设计稿大小是375px
+    1px = 2rpx
+    14px = 28rpx
+  */
+  font-size: 28rpx;
+}

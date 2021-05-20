@@ -1,0 +1,120 @@
+.search_container {
+  padding: 0 20rpx;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rpx 0;
+    height: 60rpx;
+    .search_input {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(237, 237, 237, .3);
+      border-radius: 30rpx;
+      padding: 0 10rpx;
+      .input_container {
+        display: flex;
+        align-items: center;
+        input {
+          margin-left: 10rpx;
+        }
+        .input_placeholder {
+          font-size: 28rpx;
+        }
+      }
+      
+      .clear_all {
+        font-size: 30rpx;
+        padding: 10rpx;
+      }
+    }
+    .cancel {
+      width: 100rpx;
+      text-align: right;
+    }
+  }
+
+  .search_content_container {
+    .search_header {
+      color: rgba(107, 100, 238, 0.96);
+      height: 80rpx;
+      line-height: 80rpx;
+      font-size: 24rpx;
+      border-bottom: 1rpx solid var(--themeColor);
+    }
+    .search_list {
+      .search_item {
+        display: flex;
+        height: 80rpx;
+        align-items: center;
+        .search_name {
+          flex: 1;
+          margin-left: 20rpx;
+          font-size: 26rpx;
+          border-bottom: 1rpx solid #eee;
+        }
+      }
+    }
+  }
+
+  .search_history {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .history_title {
+      font-size: 28rpx;
+      margin: 20rpx 20rpx 0 0;
+    }
+    .history_item {
+      padding: 10rpx 30rpx;
+      margin-right: 20rpx;
+      background-color: #ededed;
+      border-radius: 20rpx;
+      margin-top: 20rpx;
+    }
+    .delete {
+      position: absolute;
+      bottom: 10rpx;
+      right: 10rpx;
+      font-size: 36rpx;
+    }
+  }
+  .hot_container {
+    .hot_title {
+      font-size: 28rpx;
+      height: 80rpx;
+      line-height: 80rpx;
+      border-bottom: 1rpx solid #eee;
+    }
+    .hot_list {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      .hot_item {
+        width: 50%;
+        height: 80rpx;
+        line-height: 80rpx;
+        font-size: 26rpx;
+        display: flex;
+        align-items: center;
+        .order {
+          margin: 0 10rpx;
+        }
+        .hot_name {
+          max-width: 70%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        image {
+          width: 35rpx;
+          height: 20rpx;
+          margin-left: 10rpx;
+        }
+      }
+    }
+  }
+}

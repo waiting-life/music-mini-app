@@ -1,0 +1,74 @@
+.recommend_container .recommend_header {
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+  color: #fff;
+}
+.recommend_container .recommend_header image {
+  width: 100%;
+  height: 100%;
+}
+.recommend_container .recommend_header .date {
+  position: absolute;
+  width: 300rpx;
+  height: 100rpx;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recommend_container .recommend_header .date .day {
+  font-size: 38rpx;
+  margin-right: 10rpx;
+}
+.recommend_container .recommend_content_container {
+  position: relative;
+  top: -20rpx;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.recommend_container .recommend_content_container .recommend_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+}
+.recommend_container .recommend_content_container .recommend_list_container {
+  height: calc(100vh - 380rpx);
+}
+.recommend_container .recommend_content_container .recommend_list_container .recommend_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+.recommend_container .recommend_content_container .recommend_list_container .recommend_item image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.recommend_container .recommend_content_container .recommend_list_container .recommend_item .song_info {
+  display: flex;
+  align-items: center;
+}
+.recommend_container .recommend_content_container .recommend_list_container .recommend_item .song_info .song_info_text {
+  font-size: 24rpx;
+}
+.recommend_container .recommend_content_container .recommend_list_container .recommend_item .song_info .song_info_text .text {
+  max-width: 500rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.recommend_container .recommend_content_container .recommend_list_container .recommend_item .iconfont {
+  width: 60rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,69 @@
+<view class="search_container">
+  <view class="header">
+    <view class="search_input">
+      <view class="input_container">
+        <view class="iconfont icon-search1"></view>
+        <input 
+          placeholder="{{showKeyword}}" 
+          placeholder-class="input_placeholder" 
+          bindinput="handleInputChange" 
+          value="{{searchContent}}"/>
+      </view>
+      <text class="clear_all" 
+        hidden="{{searchContent}}"
+        bindtap="handleClearSearch">X
+      </text>
+    </view>
+    <view 
+      type="text" 
+      class="cancel"
+      bindtap="cancelSearch">
+      取消
+    </view>
+  </view>
+
+  <!-- 搜索内容展示 -->
+  <block wx:if="{{searchContent}}">
+    <view class="search_content_container">
+      <view class="search_header">搜索内容：{{searchContent}}</view>
+      <view class="search_list">
+        <view class="search_item" 
+          wx:for="{{searchList}}" 
+          wx:key="id"
+          bindtap="addSearchHistory"
+          data-content="{{item}}">
+          <text class="iconfont icon-search1"></text>
+          <text class="search_name">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  
+  <block wx:else>
+    <!-- 搜索的历史记录 -->
+    <view class="search_history">
+      <view class="history_title">历史</view>
+      <view class="history_item"
+        wx:for="{{historyList}}"
+        wx:key="index">
+        {{item}}  
+      </view>
+     <view 
+      wx:if="{{historyList.length}}" 
+      class="iconfont icon-shanchu delete" 
+      bindtap="deleteSearhHistory">
+    </view>
+    </view>
+    <!-- 热搜榜 -->
+    <view class="hot_container">
+      <view class="hot_title">热搜榜</view>
+      <view class="hot_list">
+        <view class="hot_item" wx:for="{{hotList}}" wx:key="score">
+          <text class="order">{{index+1}}</text>
+          <text class="hot_name">{{item.searchWord}}</text>
+          <image wx:if="{{item.iconUrl}}" src="{{item.iconUrl}}" />
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

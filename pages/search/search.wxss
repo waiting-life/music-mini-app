@@ -1,0 +1,111 @@
+.search_container {
+  padding: 0 20rpx;
+}
+.search_container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  height: 60rpx;
+}
+.search_container .header .search_input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(237, 237, 237, 0.3);
+  border-radius: 30rpx;
+  padding: 0 10rpx;
+}
+.search_container .header .search_input .input_container {
+  display: flex;
+  align-items: center;
+}
+.search_container .header .search_input .input_container input {
+  margin-left: 10rpx;
+}
+.search_container .header .search_input .input_container .input_placeholder {
+  font-size: 28rpx;
+}
+.search_container .header .search_input .clear_all {
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+.search_container .header .cancel {
+  width: 100rpx;
+  text-align: right;
+}
+.search_container .search_content_container .search_header {
+  color: rgba(107, 100, 238, 0.96);
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid var(--themeColor);
+}
+.search_container .search_content_container .search_list .search_item {
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+}
+.search_container .search_content_container .search_list .search_item .search_name {
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.search_container .search_history {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search_container .search_history .history_title {
+  font-size: 28rpx;
+  margin: 20rpx 20rpx 0 0;
+}
+.search_container .search_history .history_item {
+  padding: 10rpx 30rpx;
+  margin-right: 20rpx;
+  background-color: #ededed;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+.search_container .search_history .delete {
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  font-size: 36rpx;
+}
+.search_container .hot_container .hot_title {
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.search_container .hot_container .hot_list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.search_container .hot_container .hot_list .hot_item {
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+}
+.search_container .hot_container .hot_list .hot_item .order {
+  margin: 0 10rpx;
+}
+.search_container .hot_container .hot_list .hot_item .hot_name {
+  max-width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.search_container .hot_container .hot_list .hot_item image {
+  width: 35rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}

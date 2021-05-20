@@ -1,0 +1,89 @@
+.search_container {
+  background-color: #242424;
+  color: #eee;
+}
+.swiper_list .swiper_item image {
+  width: 100%;
+}
+.nav_container {
+  display: flex;
+}
+.nav_container .nav_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav_container .nav_item .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: var(--bgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  color: #fff;
+  margin: 20rpx 0;
+}
+.nav_container .nav_item .nav_text {
+  font-size: 26rpx;
+}
+.recommend_container {
+  padding: 20rpx;
+}
+.recommend_container .recommend_content {
+  display: flex;
+  margin-top: 20rpx;
+  height: 300rpx;
+}
+.recommend_container .recommend_content .recommend_item {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.recommend_container .recommend_content .recommend_item image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+.recommend_container .recommend_content .recommend_item .recommend_name {
+  margin-top: 5rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 26rpx;
+}
+.top_list_container {
+  padding: 20rpx;
+}
+.top_list_container .top_swiper {
+  height: 420rpx;
+}
+.top_list_container .top_swiper .top_swiper_item .title {
+  font-size: 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.top_list_container .top_swiper .top_swiper_item .music_item {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  background-color: #fbfbfb;
+}
+.top_list_container .top_swiper .top_swiper_item .music_item image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 8rpx;
+}
+.top_list_container .top_swiper .top_swiper_item .music_item .music_order {
+  margin: 0 20rpx;
+}
+.top_list_container .top_swiper .top_swiper_item .music_item .music_name {
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
